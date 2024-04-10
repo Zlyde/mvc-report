@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Lucky{% endblock %}
+
+{% block body %}
+    <main>
+        <h1>Lucky number</h1>
+        <p>Hello and welcome!</p>
+        <p>Your lucky number is: {{ number }}</p>
+        {% if number % 2 != 0 %}
+            <p>Thats odd, I thought it would be even.</p>
+            <figure class="figure left">
+                <img src="{{ asset('img/monkeythink.jpg') }}" width="500px" alt="thinking">
+            </figure>
+        {% else %}
+            <p>It's so even I can't help but smile!</p>
+            <figure class="figure left">
+                <img src="{{ asset('img/monkeysmile.jpg') }}" width="500px" alt="smiling">
+            </figure>
+        {% endif %}
+    </main>
+{% endblock %}

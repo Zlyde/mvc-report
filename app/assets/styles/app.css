@@ -54,6 +54,10 @@ p {
     font-size: 1rem;
 }
 
+li {
+    margin-left: 1.4rem;
+}
+
 /** footer.css */
 
 footer {
