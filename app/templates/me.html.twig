@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Me{% endblock %}
+
+{% block body %}
+    <main>
+        <h1>Me</h1>
+        <figure class="figure right">
+            <img src="{{ asset('img/me.jpg') }}" width="300px" alt="me">
+            <figcaption>Jag och min katt Gizmo</figcaption>
+        </figure>
+        <p>Mitt namn är Anton Lindahl och studerar Webbprogrammering på distans på
+        Blekinge Teknsiska Högskola. Jag bor i en förort till Stockholm som heter Huddinge
+        och jobbar även deltid på Kjell & Company där.</p>
+
+        <p>Jag har intresse för spel i alla former, och för Japan och japansk kultur.
+        Brädspel är också ett stort intresse och min samling växer stadigt, mitt favorit
+        brädspel heter Dune: Imperium. Just nu är min dröm är att kunna bo och jobba som
+        webbutvecklare i Japan.</p>
+
+        <p>Jag älskar djur och har två katter, Sonic och Gizmo, som är av rasen Helig Birma.</p>
+    </main>
+{% endblock %}

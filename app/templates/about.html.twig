@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="two-col-layout">
+            <div class="col1">
+                <h1>About</h1>
+                <figure class="figure left">
+                    <img src="{{ asset('img/me.jpg') }}" width="300px" alt="me">
+                </figure>
+                <p>Fokus i denna kurs ligger i objektorienterad programmering inom PHP.</p>
+                <p>I kursen lär vi oss att använda ett webbaserat ramverk Symfony
+                ihop med databaser.</p>
+                <p>Vi använder även Twig som en template-motor för html.</p>
+                <p>I samband med detta kommer även enhetstester att tas upp.</p>
+            </div>
+
+            <div class="col2">
+                <h4>GitHub</h4>
+                <p>Nedan finns en länk till kursens kursrepo på GitHub, och även
+                en länk till mitt egna GitHub repo.</p>
+                <ul>
+                    <li><a href="https://github.com/dbwebb-se/mvc">Kursrepo</a></li>
+                    <li><a href="https://github.com/Zlyde/mvc-report">Mitt repo</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+{% endblock %}
