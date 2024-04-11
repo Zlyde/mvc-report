@@ -12,8 +12,6 @@ class MeControllerTwig extends AbstractController
     #[Route("/", name: "me")]
     public function number(): Response
     {
-        
-
         return $this->render('me.html.twig');
     }
 
@@ -48,7 +46,7 @@ class MeControllerTwig extends AbstractController
     }
 
     #[Route("/api/quote", name: "quote")]
-    public function jsonNumber(): Response
+    public function jsonQuote(): Response
     {
         $number = random_int(1, 3);
         $quote = "";
